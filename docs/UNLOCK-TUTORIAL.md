@@ -68,6 +68,8 @@ EMUI 8 的 5% USB Update 模式会按 `UPDATE.APP` 里的镜像头写分区。�
 | Magisk 25.2（可选） | root | GPLv3；本文未执行 root |
 | TWRP `twrp-3.4.0-0-prague.img`（仅诊断） | ADB/dd/读日志 | **这是 P8 Lite 2017 的 TWRP，不是 nova 2 (PIC/Picasso)**；用完恢复原厂 recovery |
 
+> 工具/固件的下载链接、版本、许可证和 SHA256 见 [`DOWNLOADS.md`](DOWNLOADS.md)。本仓库不托管华为固件/bootloader/专有驱动。
+
 ### 2.3 Python 环境
 
 ```powershell
@@ -111,7 +113,7 @@ py -3.14 -m venv .venv
 ## 3. 准备固件
 
 1. 用 Firmware Finder 或官方渠道找到**与设备完全匹配**的 OTA。本次是 `PIC-TL00 8.0.0.377(C01)`。
-2. 下载 `update-377.zip`，核对官方 filelist 的 MD5。本次包 1,915,377,768 字节，MD5 `5EC1884EB11E4958A1ECA4131E0D5E74`。
+2. 下载 `update-377.zip`，核对官方 filelist 的 MD5/SHA256。本次包 1,915,377,768 字节，MD5 `5EC1884EB11E4958A1ECA4131E0D5E74`，SHA256 `6EFE27F466D633727303F5A57FE38B245826257053A5C167D36DE4223C823BA7`。
 3. 解出 `UPDATE.APP`（本次 3,992,312,976 字节）。
 4. 用 `usbd-appupk.py` 或 `analysis/extract_parts_own.py` 提取分区。先提取并校验：
    - `XLOADER.img`（69,568 字节）

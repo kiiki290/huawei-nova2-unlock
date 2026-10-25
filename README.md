@@ -51,6 +51,7 @@ The write-up also documents the post-unlock **eRecovery boot loop** we hit and t
 |---|---|
 | `docs/UNLOCK-TUTORIAL.md` | Full method, toolchain, commands, protocol details, pitfalls, recovery |
 | `PROGRESS.md` | Lab notebook / device-specific record (sanitize before publishing) |
+| `docs/DOWNLOADS.md` | Third-party tool/firmware links, licenses and SHA256 checksums |
 | `analysis/vcom_upload.py` | pyusb VCOM uploader for the PotatoNV Kirin 65x bootloaders |
 | `analysis/fastboot_nve.py` | Minimal raw fastboot client for binary `getvar:nve:` writes |
 | `analysis/extract_more_parts.py` | Extract partitions from `UPDATE.APP` |
@@ -73,6 +74,10 @@ Large firmware, downloaded tools, bootloaders, Magisk/TWRP images, screenshots a
 - Optional: Magisk 25.2 (root), TWRP `prague` (diagnostics only; wrong device)
 
 Exact versions, hashes, and setup commands: see [docs/UNLOCK-TUTORIAL.md](docs/UNLOCK-TUTORIAL.md).
+
+## Downloads
+
+Third-party tools and firmware are **linked, not rehosted**. See [docs/DOWNLOADS.md](docs/DOWNLOADS.md) for exact links, versions, licenses and SHA256 checksums.
 
 ## Key pitfalls
 
