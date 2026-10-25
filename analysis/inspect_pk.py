@@ -1,0 +1,5 @@
+b=open(r'tools/usbdload/pk_cracked.bin','rb').read()
+print('len',len(b),'hex',b.hex())
+print('ascii',''.join(chr(c) if 32<=c<127 else '.' for c in b))
+c=open(r'tools/usbdload/crc_hacked.bin','rb').read()
+print('crc_hacked len',len(c),'first32',c[:32].hex())

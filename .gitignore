@@ -1,0 +1,59 @@
+# Python virtualenv / caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local working/intermediate data
+backup/
+logs/
+
+# Downloaded tools, firmware and large binaries (keep locally, not in git)
+tools/
+
+# Analysis artifacts: screenshots, dumps, logs, firmware metadata
+analysis/*.png
+analysis/*.jpg
+analysis/*.jpeg
+analysis/*.heic
+analysis/*.gif
+analysis/*.html
+analysis/*.json
+analysis/*.bin
+analysis/*.gz
+analysis/*.cpio
+analysis/*.log
+analysis/*.zip
+analysis/*.apk
+analysis/*.img
+analysis/*.img.header
+analysis/*.xml
+analysis/IMG_*
+analysis/nvme-backup-*
+analysis/recovery-log.*
+analysis/twrp-ramdisk.*
+analysis/zero-1m.bin
+
+# Third-party source trees / backups
+analysis/ff/
+analysis/dload-backup/
+analysis/huawei-unlock-tool/
+
+# Third-party reference source / licenses (not part of this project)
+analysis/*.cs
+analysis/cve2215-*
+analysis/hkt-*.py
+analysis/Potato*.py
+analysis/PotatoNV-*.md
+analysis/kirin-tool-*.md
+analysis/kirin-toolkit-readme.md
+analysis/Huawei-Unlock-Tool-README.md
+analysis/usbdload-readme.md
+analysis/ff-readme.md
+
+# Private device data (SN / unlock code / backups)
+PRIVATE-NOTES.md
+
+# Third-party scripts kept locally but not redistributed
+analysis/usbd-*.py
+analysis/PotatoCP-*
+analysis/hkt-requirements.txt
